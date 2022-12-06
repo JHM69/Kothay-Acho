@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/colorSatelit"
+        app:layout_constraintBottom_toTopOf="@+id/iv_lower_line"
+        app:layout_constraintEnd_toStartOf="@+id/Address_name"
+        app:layout_constraintStart_toEndOf="@+id/stepTv"
+        app:layout_constraintTop_toTopOf="@+id/stepTv" />
+
+    <View
+        android:id="@+id/iv_lower_line"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:background="@color/colorSatelit"
+        android:backgroundTint="@color/colorSatelit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/stepTv"
+        app:layout_constraintStart_toStartOf="@+id/stepTv"
+        app:layout_constraintTop_toBottomOf="@+id/stepTv"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/stepTv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/colorSatelit"
+        android:gravity="center"
+        android:paddingStart="5dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="3dp"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/iv_lower_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_upper_line"
+        tools:targetApi="lollipop" />
+    <View
+        android:id="@+id/iv_upper_line"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="@color/colorSatelit"
+        android:backgroundTint="@color/colorSatelit"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/stepTv"
+        app:layout_constraintEnd_toEndOf="@+id/stepTv"
+        app:layout_constraintStart_toStartOf="@+id/stepTv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/Address_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:text="Comilla Bangladesh"
+        android:textColor="#272727"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/iv_lower_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/stepTv"
+        app:layout_constraintTop_toTopOf="@+id/stepTv"
+        tools:ignore="Autofill,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="9:12 AM January 2022"
+        android:textColor="#272727"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/Address_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Address_name"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
